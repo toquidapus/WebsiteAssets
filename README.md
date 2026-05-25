@@ -1,1 +1,1 @@
-Hosts HTML code for embeds for my personal website.
+Hosts HTML code for embeds on my personal website.
