@@ -1,0 +1,64 @@
+<!-- Error 404 Code - By Toquidapus -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: 'Comfortaa', sans-serif;
+background: #a2c4c9;
+}
+
+h1 {
+font-size: 160px;
+color: #134f5c;
+margin: 0;
+}
+
+p {
+font-size: 28px;
+color: #77a3ac;
+margin-top: 15px;
+text-align: center;
+animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+0% { transform: translateY(0px); }
+50% { transform: translateY(-15px); }
+100% { transform: translateY(0px); }
+}
+</style>
+</head>
+<body>
+<h1>404</h1>
+<p id="msg"></p>
+
+<script>
+const messages = [
+"got ungy and eated the embed...",
+"not found!",
+"there's nothing here!",
+"can't find that embed!",
+"not available right now!",
+"how did you even get here?",
+"i wonder where the embed went...",
+"maybe the embed is on vacation?"
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+const msg = messages[Math.floor(Math.random() * messages.length)];
+document.getElementById("msg").innerText = msg;
+});
+</script>
+</body>
+</html>
